@@ -1,4 +1,4 @@
-name: 'Build custom'
+name: 'Build postylem'
 on:
   - workflow_dispatch
 jobs:
@@ -6,4 +6,7 @@ jobs:
     uses: ./.github/workflows/main.yml
     with:
       mode: '["build"]'
+      nav: '["invertedt"]'
+      clipboard: '["mac"]'
+      mapping: '["noreverseangle"]'
       kmonad_os: '["mac"]'
